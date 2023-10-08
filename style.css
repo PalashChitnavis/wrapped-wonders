@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Nunito:wght@200;300;400;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+:root{
+    --background: #003e45;
+    --blue: #279EFF;
+    --cyan: #40F8FF;
+    --green: #D5FFD0;
+    --gold: #8d856b;
+}
+*{
+    font-family: 'Nunito' , sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .1s linear;
+}
+html{
+    overflow-x:hidden;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    background-color: var(--background);
+}
+header{
+    position: fixed;
+    width: 90vw;
+    top: 0;
+    margin-left: 5vw;
+    z-index: 1000;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+header .logo{
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    color: var(--gold);
+    font-weight: bolder;
+}
+header .navbar{
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .navbar a {
+    margin: 1rem;
+    font-size: 1.6rem;
+    color: var(--background);
+}
+header .navbar a:hover{
+    color: var(--gold);
+    border-bottom: .1rem solid var(--gold);
+    padding-bottom: 0.5rem;
+}
+.btn {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    outline: none;
+    overflow: hidden;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--background)
+}
+.btn:hover {
+    border-radius: 10px;
+    padding-right: 24px;
+    padding-left:8px;
+}
+.btn:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+.btn:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+}
+.css-button-fully-rounded--blue {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #2c0b8e;
+    background: #2c0b8e;
+}
+.css-button-fully-rounded--blue:hover {
+    background: #fff;
+    color: #2c0b8e
+}
+.carousel{
+    margin-top: 8rem;
+    overflow: hidden;
+    display: flex;
+    height: 55vh;
+    width: 94vw;
+    margin-left: 3vw;
+    border-radius: 10px;
+}
+.carousel .swiper-slide img{
+    border-radius: 10px;
+    height: 55vh;
+    width: 94vw;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel .swiper-slide .desk{
+    display: block;
+}
+.carousel .swiper-slide .mob{
+    display: none;
+}
+.constant{
+    position: fixed;
+    right: 5rem;
+    bottom: 5rem;
+    z-index: 1000;
+}
+.constant .whatsapp-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: green;
+    width: 70px;
+    height: 70px;
+}
+.festive{
+    margin-left: 2.5vw;
+    border-radius: 10px;
+    width: 94vw;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccc;
+}
+.festive .heading{
+    margin-top: 3rem;
+    font-size: 4rem;
+    border-bottom: 1px solid;
+    color: var(--gold);
+}
+.festive .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.festive .box-container .box{
+    flex-grow: 1;
+    min-width: 20vw;
+    width: 40rem;
+    max-width: 40rem;
+    padding: 2.5rem;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.festive .box-container .box .image-container{
+    display: flex;
+    flex-direction: column;
+}
+.festive .box-container .box .image-container .info{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    height: 5rem;
+    align-items: center;
+}
+.festive .box-container .box .image-container .info div{
+    margin-top: 1.5rem;
+    width: 50%;
+    font-size: 1.8rem;
+}
+.festive .box-container .box .image{
+    height: 40rem;
+    margin-top: 5rem;
+}
+.festive .box-container .box .image img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.festive .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--background);
+}
+.festive .box-container .box span{
+    font-size: 2rem;
+    margin-top: .5rem;
+    font-style: italic;
+}
+.css-button-fully-rounded--black {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #212529;
+    background: var(--background);
+  }
+  .css-button-fully-rounded--black:hover {
+    background: #fff;
+    color: #212529
+  }
+.corporategifting{
+    margin-left: 2.5vw;
+    border-radius: 10px;
+    width: 94vw;
+    height: 20vh;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccc;
+}
+.corporategifting .heading{
+    margin-top: 3rem;
+    font-size: 4rem;
+    border-bottom: 1px solid;
+    color: var(--gold);
+}
+.birthanni{
+    margin-left: 2.5vw;
+    border-radius: 10px;
+    width: 94vw;
+    height: 20vh;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccc;
+}
+.birthanni .heading{
+    margin-top: 3rem;
+    font-size: 4rem;
+    border-bottom: 1px solid;
+    color: var(--gold);
+}
+.newborn{
+    margin-left: 2.5vw;
+    border-radius: 10px;
+    width: 94vw;
+    height: 20vh;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccc;
+}
+.newborn .heading{
+    margin-top: 3rem;
+    font-size: 4rem;
+    border-bottom: 1px solid;
+    color: var(--gold);
+}
+.buildyourown{
+    margin-left: 2.5vw;
+    border-radius: 10px;
+    width: 94vw;
+    height: 75vh;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccc;
+}
+.buildyourown .heading{
+    margin-top: 3rem;
+    font-size: 4rem;
+    border-bottom: 1px solid;
+    color: var(--gold);
+}
+.buildyourown img{
+    width: 90vw;
+    margin-top: 2rem;
+    height: 55vh;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+header .icons i{
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 991px){
+    html{
+        font-size: 50%;
+    }
+}
+@media (max-width: 768px){
+    header{
+        height: 6rem;
+    }
+    header .logo{
+        font-size: 1.5rem;
+    }
+    header .icons #menu-bars{
+        display: inline-block;
+        font-size: 1.2rem;
+    }
+    header .contact{
+        display: none;
+    }
+    header nav{
+        flex-direction: column;
+        
+        position: absolute;
+        top: 6rem;
+        left:20vw;
+        right: 100%;
+        background-color: #fff;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 0 0, 100% 0, 100% 0);
+    }
+    header .navbar.active{
+        clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+    }
+    header nav a{
+        display: block;
+        font-size: 2rem;
+        padding: 1.5rem;
+        margin: 1rem;
+        background-color: #eee;
+    }
+    .carousel{
+        height: 80vh;
+    }
+    .carousel .swiper-slide img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .carousel .swiper-slide .desk{
+        display: none;
+    }
+    .carousel .swiper-slide .mob{
+        display: inline-block;
+    }
+    .constant .whatsapp-container{
+        width: 40px;
+        height: 40px;
+    }
+    .constant .whatsapp-container img{
+        content: url(./images/whatsapp-mob.svg);
+    }
+}

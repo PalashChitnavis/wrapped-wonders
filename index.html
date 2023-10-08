@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrapped Wonders</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header>
+
+        <a href="#" class="logo">wrapped wonders</a>
+        <nav class="navbar">
+            <a href="#festive">festive</a>
+            <a href="#corporategifting">corporate gifting</a>
+            <a href="#birthanni">birthdays / anniversaries</a>
+            <a href="#newborn">newborn</a>
+            <a href="#buildyourown">build your own hamper</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+        </div>
+        <div class="contact">
+            <a class="btn">contact us</a>
+        </div>
+    </header>
+
+    <section class="carousel swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div>
+                    <img class="desk" src="./images/carousel-1.jpg" alt="">
+                    <img class="mob" src="./images/carousel-1-mob.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img class="desk" src="./images/carousel-2.jpg" alt="">
+                    <img class="mob" src="./images/carousel-2-mob.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img class="desk" src="./images/carousel-3.jpg" alt="">
+                    <img class="mob" src="./images/carousel-3-mob.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <img class="desk" src="./images/carousel-4.jpg" alt="">
+                    <img class="mob" src="./images/carousel-4-mob.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="constant">
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=919822853397&text=Hi">
+            <div class="whatsapp-container">
+                <img src="./images/whatsapp.svg" alt="">
+            </div>
+        </a>
+    </section>
+    <section class="festive" id="festive">
+        <h1 class="heading">festive hampers</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="image-container">
+                    <div class="image"><img class="i1" src="./images/hamper-1-main.jpg" alt=""></div>
+                    <div class="info">
+                        <div class="css-button-fully-rounded--black">view hamper</div>
+                        <div class="css-button-fully-rounded--black">enquire</div>
+                    </div>
+                </div>
+                <h3>festive hamper 1</h3>
+                <span>&#8377 1999 /-</span>
+            </div>
+            <div class="box">
+                <div class="image-container">
+                    <div class="image"><img class="i2" src="./images/hamper-2-main.jpg" alt=""></div>
+                    <div class="info">
+                        <div class="css-button-fully-rounded--black">view hamper</div>
+                        <div class="css-button-fully-rounded--black">enquire</div>
+                    </div>
+                </div>
+                <h3>festive hamper 2</h3>
+                <span>&#8377 1999 /-</span>
+            </div>
+            <div class="box">
+                <div class="image-container">
+                    <div class="image"><img class="i3" src="./images/hamper-3-main.jpg" alt=""></div>
+                    <div class="info">
+                        <div class="css-button-fully-rounded--black">view hamper</div>
+                        <div class="css-button-fully-rounded--black">enquire</div>
+                    </div>
+                </div>
+                <h3>festive hamper 3</h3>
+                <span>&#8377 1999 /-</span>
+            </div>
+            <div class="box">
+                <div class="image-container">
+                    <div class="image"><img class="i4" src="./images/hamper-4-main.jpg" alt=""></div>
+                    <div class="info">
+                        <div class="css-button-fully-rounded--black">view hamper</div>
+                        <div class="css-button-fully-rounded--black">enquire</div>
+                    </div>
+                </div>
+                <h3>festive hamper 4</h3>
+                <span>&#8377 1999 /-</span>
+            </div>
+            <div class="box">
+                <div class="image-container">
+                    <div class="image"><img class="i4" src="./images/hamper-5-main.jpg" alt=""></div>
+                    <div class="info">
+                        <div class="css-button-fully-rounded--black">view hamper</div>
+                        <div class="css-button-fully-rounded--black">enquire</div>
+                    </div>
+                </div>
+                <h3>festive hamper 5</h3>
+                <span>&#8377 1999 /-</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".swiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
