@@ -336,13 +336,19 @@ header .icons i{
 @media (max-width: 768px){
     header{
         height: 6rem;
+        width: 100%;
+        margin-left: 0;
+        border-radius: 0;
     }
     header .logo{
-        font-size: 1.5rem;
+        font-size: 2.2rem;
+    }
+    header .icons{
+        margin-left: -3.5rem;
     }
     header .icons #menu-bars{
         display: inline-block;
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
     header .contact{
         display: none;
@@ -352,7 +358,7 @@ header .icons i{
         
         position: absolute;
         top: 6rem;
-        left:20vw;
+        left:0;
         right: 100%;
         background-color: #fff;
         border-top: .1rem solid rgba(0,0,0,.2);
