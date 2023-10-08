@@ -324,7 +324,39 @@ header .navbar a:hover{
 header .icons i{
     display: none;
 }
-
+.aboutus{
+    margin-left: 2.5vw;
+    border-radius: 10px;
+    width: 94vw;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+.aboutus .heading{
+    margin-top: 3rem;
+    font-size: 4rem;
+    border-bottom: 1px solid;
+    color: var(--gold);
+}
+.aboutus .box-container {
+    margin-top: 5rem;
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+}
+.aboutus .box-container .mob{
+    display: none;
+}
+.aboutus .box-container img{
+    width: 90vw;
+    border-radius: 10px;
+}
 
 @media (max-width: 991px){
     html{
@@ -432,6 +464,10 @@ header .icons i{
         position: absolute;
         top: 1rem !important;
     }
-
-
+    .aboutus .box-container .mob{
+        display: block;
+    }
+    .aboutus .box-container .desk{
+        display: none;
+    }
 }
