@@ -9,3 +9,4 @@ window.onscroll = () => {
     navbar.classList.remove('active');
     menu.classList.remove('fa-times');
 }
+

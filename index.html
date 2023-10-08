@@ -59,6 +59,7 @@
                 </div>
             </div>
         </div>
+        <div class="swiper-pagination"></div>
     </section>
     <section class="constant">
         <a target="_blank" href="https://api.whatsapp.com/send?phone=919822853397&text=Hi">
@@ -69,62 +70,42 @@
     </section>
     <section class="festive" id="festive">
         <h1 class="heading">festive hampers</h1>
+        <div>
+            <div class="box-container swiper-wrapper">
+                <div class="box swiper-slide">
+                    <div class="image-container">
+                        <div class="image"><img class="i1" src="./images/hamper-1-main.jpg" alt=""></div>
+                        <div class="info">
+                            <div class="css-button-fully-rounded--black">view hamper</div>
+                            <div class="css-button-fully-rounded--black">enquire</div>
+                        </div>
+                    </div>
+                    <h3>festive hamper 1</h3>
+                    <span>&#8377 1999 /-</span>
+                </div>
+                <div class="box swiper-slide">
+                    <div class="image-container">
+                        <div class="image"><img class="i2" src="./images/hamper-2-main.jpg" alt=""></div>
+                        <div class="info">
+                            <div class="css-button-fully-rounded--black">view hamper</div>
+                            <div class="css-button-fully-rounded--black">enquire</div>
+                        </div>
+                    </div>
+                    <h3>festive hamper 2</h3>
+                    <span>&#8377 1999 /-</span>
+                </div>
+                <div class="box swiper-slide">
+                    <div class="image-container">
+                        <div class="image"><img class="i3" src="./images/hamper-3-main.jpg" alt=""></div>
+                        <div class="info">
+                            <div class="css-button-fully-rounded--black">view hamper</div>
+                            <div class="css-button-fully-rounded--black">enquire</div>
+                        </div>
+                    </div>
+                    <h3>festive hamper 3</h3>
+                    <span>&#8377 1999 /-</span>
+                </div>
 
-        <div class="box-container">
-            <div class="box">
-                <div class="image-container">
-                    <div class="image"><img class="i1" src="./images/hamper-1-main.jpg" alt=""></div>
-                    <div class="info">
-                        <div class="css-button-fully-rounded--black">view hamper</div>
-                        <div class="css-button-fully-rounded--black">enquire</div>
-                    </div>
-                </div>
-                <h3>festive hamper 1</h3>
-                <span>&#8377 1999 /-</span>
-            </div>
-            <div class="box">
-                <div class="image-container">
-                    <div class="image"><img class="i2" src="./images/hamper-2-main.jpg" alt=""></div>
-                    <div class="info">
-                        <div class="css-button-fully-rounded--black">view hamper</div>
-                        <div class="css-button-fully-rounded--black">enquire</div>
-                    </div>
-                </div>
-                <h3>festive hamper 2</h3>
-                <span>&#8377 1999 /-</span>
-            </div>
-            <div class="box">
-                <div class="image-container">
-                    <div class="image"><img class="i3" src="./images/hamper-3-main.jpg" alt=""></div>
-                    <div class="info">
-                        <div class="css-button-fully-rounded--black">view hamper</div>
-                        <div class="css-button-fully-rounded--black">enquire</div>
-                    </div>
-                </div>
-                <h3>festive hamper 3</h3>
-                <span>&#8377 1999 /-</span>
-            </div>
-            <div class="box">
-                <div class="image-container">
-                    <div class="image"><img class="i4" src="./images/hamper-4-main.jpg" alt=""></div>
-                    <div class="info">
-                        <div class="css-button-fully-rounded--black">view hamper</div>
-                        <div class="css-button-fully-rounded--black">enquire</div>
-                    </div>
-                </div>
-                <h3>festive hamper 4</h3>
-                <span>&#8377 1999 /-</span>
-            </div>
-            <div class="box">
-                <div class="image-container">
-                    <div class="image"><img class="i4" src="./images/hamper-5-main.jpg" alt=""></div>
-                    <div class="info">
-                        <div class="css-button-fully-rounded--black">view hamper</div>
-                        <div class="css-button-fully-rounded--black">enquire</div>
-                    </div>
-                </div>
-                <h3>festive hamper 5</h3>
-                <span>&#8377 1999 /-</span>
             </div>
         </div>
     </section>
@@ -133,10 +114,12 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".swiper", {
+            slidesPerView: 1,
             spaceBetween: 30,
             centeredSlides: true,
+            loop: true,
             autoplay: {
-                delay: 3500,
+                delay: 2000,
                 disableOnInteraction: false,
             },
             pagination: {

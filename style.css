@@ -28,6 +28,7 @@ header{
     position: fixed;
     width: 90vw;
     top: 0;
+    height: 6rem;
     margin-left: 5vw;
     z-index: 1000;
     padding: 0 5rem;
@@ -61,7 +62,6 @@ header .navbar a:hover{
     padding-bottom: 0.5rem;
 }
 .btn {
-    min-width: 130px;
     height: 40px;
     color: #fff;
     padding: 5px 10px;
@@ -139,6 +139,7 @@ header .navbar a:hover{
 .carousel .swiper-slide .mob{
     display: none;
 }
+
 .constant{
     position: fixed;
     right: 5rem;
@@ -325,9 +326,6 @@ header .icons i{
 }
 
 
-
-
-
 @media (max-width: 991px){
     html{
         font-size: 50%;
@@ -341,26 +339,37 @@ header .icons i{
         border-radius: 0;
     }
     header .logo{
+        position: absolute;
+        left: 18%;
         font-size: 2.2rem;
     }
     header .icons{
-        margin-left: -3.5rem;
+        position: absolute;
+        left: 1rem;
     }
     header .icons #menu-bars{
         display: inline-block;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     header .contact{
-        display: none;
+        display: inline-block;
+        font-size: .5rem;
+        position: absolute;
+        right: 1rem;
     }
-    header nav{
+    header .constant .btn{
+        width: 70px;
+    }
+    header .navbar{
         flex-direction: column;
-        
+        width: 70vw;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         position: absolute;
         top: 6rem;
         left:0;
         right: 100%;
-        background-color: #fff;
+        background-color: #eee;
         border-top: .1rem solid rgba(0,0,0,.2);
         border-bottom: .1rem solid rgba(0,0,0,.2);
         padding: 1rem;
@@ -369,11 +378,13 @@ header .icons i{
     header .navbar.active{
         clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
     }
-    header nav a{
+    header .navbar a{
         display: block;
+        width: 100%;
         font-size: 2rem;
         padding: 1.5rem;
         margin: 1rem;
+        border-bottom: 1px solid var(--gold);
         background-color: #eee;
     }
     .carousel{
@@ -391,10 +402,36 @@ header .icons i{
         display: inline-block;
     }
     .constant .whatsapp-container{
+        position: fixed;
         width: 40px;
         height: 40px;
+        right: 3rem;
+        bottom: 3rem;
     }
     .constant .whatsapp-container img{
         content: url(./images/whatsapp-mob.svg);
     }
+    .festive{
+        margin-top: -5rem;
+    }
+    .festive .box-container .box{
+        margin-top: -5rem;
+    }
+    .festive .box-container .box .image-container .info{
+        margin-top: 1rem;
+    }
+    .festive .box-container .box .image-container .info div{
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 1rem;
+    }
+    .festive .box-container .box h3{
+        margin-top: 1.5rem;
+    }
+    .carousel  .swiper-pagination{
+        position: absolute;
+        top: 1rem !important;
+    }
+
+
 }
