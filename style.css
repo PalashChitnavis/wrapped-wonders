@@ -7,7 +7,7 @@
     --gold: #8d856b;
 }
 *{
-    font-family: 'Nunito' , sans-serif;
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,6 +18,7 @@
     transition: all .1s linear;
 }
 html{
+    font-family: 'Nunito' , sans-serif;
     overflow-x:hidden;
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -357,7 +358,194 @@ header .icons i{
     width: 90vw;
     border-radius: 10px;
 }
-
+.contact-us{
+    margin-left: 2.5vw;
+    border-radius: 10px;
+    width: 94vw;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+}
+.contact-us .heading{
+    margin-top: 3rem;
+    font-size: 4rem;
+    border-bottom: 1px solid;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+}
+.contact-us .details {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.contact-us .top{
+    width: 45vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.contact-us .top img{
+    width: 40vw;
+    border-radius: 10px;
+}
+.contact-us .bottom{
+    width: 45vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.contact-us .bottom img{
+    width: 40vw;
+    border-radius: 10px;
+}
+.social-buttons{
+    width: 94vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.social-buttons .insta blockquote{
+    border-radius: 20px;
+}
+.social a span{
+    font-size: 2rem;
+}
+.social{
+    width: 90vw;
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.css-button-shadow-border--red {
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    background: #d90429;
+  }
+  .css-button-shadow-border--red:hover {
+    background-color: #ef233c;
+  }
+  .css-button-shadow-border--red:active {
+    top: 2px;
+  }
+  .css-button-shadow-border--black {
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    background: #212529;
+  }
+  .css-button-shadow-border--black:hover {
+    background-color: #343a40;
+  }
+  .css-button-shadow-border--black:active {
+    top: 2px;
+  }
+  .css-button-shadow-border-sliding--green {
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    background: #57cc99;
+   z-index: 1;
+  }
+  .css-button-shadow-border-sliding--green:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  .css-button-shadow-border-sliding--green:after {
+    border-radius: 5px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+    background-color: #80ed99;
+    right: 0;
+  }
+  .css-button-shadow-border-sliding--green:active {
+    top: 2px;
+  }
+  .css-button-shadow-border-sliding--sky {
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    background: #4433ff;
+   z-index: 1;
+  }
+  .css-button-shadow-border-sliding--sky:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  .css-button-shadow-border-sliding--sky:after {
+    border-radius: 5px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+    background-color: #3a86ff;
+    right: 0;
+  }
+  .css-button-shadow-border-sliding--sky:active {
+    top: 2px;
+  }
 @media (max-width: 991px){
     html{
         font-size: 50%;
@@ -469,5 +657,36 @@ header .icons i{
     }
     .aboutus .box-container .desk{
         display: none;
+    }
+    .contact-us .details {
+        flex-direction: column;
+    }
+    .contact-us .details .top img ,
+    .contact-us .details .bottom img{
+        width: 85vw;
+    }
+    .contact-us .social-buttons{
+        flex-direction: column;
+    }
+    .contact-us .social-buttons .insta{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70vw;
+    }
+    .contact-us .social{
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 15rem;
+        margin-bottom: 1rem;
+    }
+    .css-button-shadow-border--red ,
+    .css-button-shadow-border--black,
+    .css-button-shadow-border-sliding--green ,
+    .css-button-shadow-border-sliding--sky {
+        width: 40vw;
+    }
+     .social a span{
+        font-size: 2rem;
     }
 }
