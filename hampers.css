@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Nunito:wght@200;300;400;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+:root{
+    --background: #003e45;
+    --blue: #279EFF;
+    --cyan: #40F8FF;
+    --green: #D5FFD0;
+    --gold: #8d856b;
+}
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .1s linear;
+}
+html{
+    font-family: 'Nunito' , sans-serif;
+    overflow-x:hidden;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    background-color: var(--background);
+}
+body{
+    -webkit-tap-highlight-color: transparent;
+}
+header{
+    position: fixed;
+    width: 90vw;
+    top: 0;
+    height: 6rem;
+    margin-left: 5vw;
+    z-index: 1000;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+header .logo{
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    color: var(--gold);
+    font-weight: bolder;
+}
+header .navbar{
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .navbar a {
+    margin: 1rem;
+    font-size: 1.6rem;
+    color: var(--background);
+}
+header .navbar a:hover{
+    color: var(--gold);
+    border-bottom: .1rem solid var(--gold);
+    padding-bottom: 0.5rem;
+}
+header .icons{
+    display: none;
+}
+.btn {
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    outline: none;
+    overflow: hidden;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--background)
+}
+.btn:hover {
+    border-radius: 10px;
+    padding-right: 24px;
+    padding-left:8px;
+}
+.btn:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+.btn:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+}
+.constant{
+    position: fixed;
+    right: 5rem;
+    bottom: 5rem;
+    z-index: 1000;
+}
+.constant .whatsapp-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: green;
+    width: 70px;
+    height: 70px;
+}
+.festive{
+    margin-left: 2.5vw;
+    border-radius: 10px;
+    width: 94vw;
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccc;
+}
+.festive .heading{
+    margin-top: 3rem;
+    font-size: 4rem;
+    border-bottom: 1px solid;
+    color: var(--gold);
+}
+.festive .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.festive .box-container .box{
+    flex-grow: 1;
+    min-width: 20vw;
+    width: 40rem;
+    max-width: 40rem;
+    padding: 2.5rem;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.festive .box-container .box .image-container{
+    display: flex;
+    flex-direction: column;
+}
+.festive .box-container .box .info{
+    flex-direction: row;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+.festive .box-container .box .image{
+    height: 40rem;
+    margin-top: 5rem;
+}
+.festive .box-container .box .image img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.festive .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--background);
+}
+.festive .box-container .box span{
+    font-size: 2rem;
+    margin-top: .5rem;
+    font-style: italic;
+}
+.css-button-fully-rounded--black {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #212529;
+    background: var(--background);
+  }
+  .css-button-fully-rounded--black:hover {
+    background: #fff;
+    color: #212529
+  }
+  .nav-ham{
+    position: relative;
+    top: 10rem;
+    font-size: 2rem;
+  }
+  .nav-ham div{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--green);
+  }
+  .nav-ham div a {
+    color: #eee;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+  }
+  .box-desc{
+    display: none;
+  }
+  .box-desc.active{
+    display: block;
+    position: fixed;
+    top: 0rem;
+    left: 0;
+    z-index: 2001;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(100, 100, 100, 0.9);
+  }
+  .box-desc img{
+    position: fixed;
+    top: 20vh;
+    left: 36vw;
+    width: 30vw;
+    border-radius: 10px;
+  }
+  .box-desc .fa-times{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    color: #cfe2f0;
+    font-size: 7rem;
+  }
+  @media (max-width: 991px){
+    html{
+        font-size: 50%;
+    }
+}
+@media (max-width: 768px){
+    header{
+        height: 6rem;
+        width: 100%;
+        margin-left: 0;
+        border-radius: 0;
+    }
+    header .logo{
+        position: absolute;
+        left: 18%;
+        font-size: 2.2rem;
+    }
+    header .icons{
+        display: block;
+        position: absolute;
+        left: 1rem;
+    }
+    header .icons #menu-bars{
+        display: inline-block;
+        font-size: 2.5rem;
+    }
+    header .contact{
+        display: inline-block;
+        font-size: .5rem;
+        position: absolute;
+        right: 1rem;
+    }
+    header .constant .btn{
+        width: 70px;
+    }
+    header .navbar{
+        flex-direction: column;
+        width: 70vw;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        position: absolute;
+        top: 6rem;
+        left:0;
+        right: 100%;
+        background-color: #eee;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 0 0, 100% 0, 100% 0);
+    }
+    header .navbar.active{
+        clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%);
+    }
+    header .navbar a{
+        display: block;
+        width: 100%;
+        font-size: 2rem;
+        padding: 1.5rem;
+        margin: 1rem;
+        border-bottom: 1px solid var(--gold);
+        background-color: #eee;
+    }
+    .constant .whatsapp-container{
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        right: 3rem;
+        bottom: 3rem;
+    }
+    .constant .whatsapp-container img{
+        content: url(./images/whatsapp-mob.svg);
+    }
+    .festive{
+        margin-top: 15rem;
+    }
+    .festive .box-container .box{
+        min-width: 20vw;
+        max-width: 45vw;
+        height: 52rem;
+        margin-top: -5rem;
+    }
+    .festive .box-container .box .image-container{
+        display: flex;
+    }
+    .festive .box-container .box .info{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        gap: .5rem;
+    }
+    .festive .box-container .box .info div{
+        height: 30px;
+        font-size: 1.5rem;
+    }
+    .festive .box-container .box h3{
+        margin-top: 1.5rem;
+    }
+    .festive .box-container .box .image{
+        height: 20rem;
+        margin-top: 5rem;
+    }
+    .festive .box-container .box .image img{
+        border: 1px solid var(--background);
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    .box-desc img{
+        position: fixed;
+        top: 27vh;
+        left: 5vw;
+        width: 90vw;
+        border-radius: 10px;
+      }
+}

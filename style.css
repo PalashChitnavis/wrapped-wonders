@@ -25,6 +25,9 @@ html{
     scroll-padding-top: 7rem;
     background-color: var(--background);
 }
+body{
+    -webkit-tap-highlight-color: transparent;
+}
 header{
     position: fixed;
     width: 90vw;
@@ -546,6 +549,8 @@ header .icons i{
   .css-button-shadow-border-sliding--sky:active {
     top: 2px;
   }
+
+
 @media (max-width: 991px){
     html{
         font-size: 50%;
@@ -689,4 +694,5 @@ header .icons i{
      .social a span{
         font-size: 2rem;
     }
+    
 }
